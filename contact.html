@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protect the Earth</title>
+  <link rel="stylesheet" href="css/desktop.css" type="text/css">
+  <link rel="stylesheet" href="css/tablet.css" type="text/css">
+  <link rel="stylesheet" href="css/mobile.css" type="text/css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <nav>
+        <ul class="nav1">
+          <li class="navLogo"><a href = "index.html">Save Our Planet</a></li>
+          <li class="navItem"><a href = "index.html">Home</a></li>
+          <li class="navItem"><a href = "issues.html">Issues</a></li>
+          <li class="navItem"><a href = "stats.html">Stats</a></li>
+          <li class="navItem"><a href = "solutions.html">Solutions</a></li>
+          <li class="navItem active"><a href = "contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <div class="contactImage">
+     <img id="contact_image_1" src="images/earth.jpeg"/>
+     <h1 id="contact_title"> Contact Us </h1>
+  </div>
+
+  <div class="contactBody">
+  <!-- <section class="contact_pre_main">
+   <p>Get in Touch</p>
+   <p>We'd love to hear from you!</p>
+  </section> -->
+
+    <!-- <table class="feedbackForm" border="1"> -->
+      <section class="contact_left">
+      <section class="contact_pre_main">
+       <p>Get in Touch</p>
+      </section>
+      <!-- <form class="feedbackForm" style="border: solid 1px black"> -->
+      <div class="feedbackForm" style="border: solid 1px black">
+      <!-- <tr>
+        <td> -->
+
+
+        <section class="contact_head">
+        <!-- <h1 id="contact_head_1">Contact Form</h1>
+        <h3 id="contact_head_2"> Questions? Comments? Feel free to let us know what you think by using the form below.</h3> -->
+        </section>
+        <div>
+        <br/>
+        <br/>
+        <div id="row1">
+          <h7 class="formLabel" id="nameNote"> Name: </h7>
+          <div id="errors1"></div>
+        </div>
+        <input class="formInput" type="text" name="username" id="userName" placeholder="Name"/>
+        <br/>
+        <br/>
+
+        <div id="row2">
+          <h7 class="formLabel" id="emailNote"> Email: </h7>
+          <div id="errors2"></div>
+        </div>
+        <input class="formInput" type="text" name="email" id="email" placeholder="Email"/>
+        <br/>
+        <br/>
+
+        <div id="row3">
+          <h7 class="formLabel" id="numberNote"> Phone Number: </h7>
+          <div id="errors3"></div>
+        </div>
+
+        <input class="formInput" type="text" name="number" id="contactNumber" placeholder="Phone Number"/>
+        <br/>
+        <br/>
+        <div id="row4">
+          <h7 class="formLabel" id="commentNote"> Questions/Comments: </h7>
+          <div id="errors4"></div>
+        </div>
+
+        <textarea class="formTextArea" name="message" id="comment" cols="100" rows="20" placeholder="Please type in your question/comment here"></textarea>
+        <br/>
+        <br/>
+          <div id="loading_animation"></div>
+          <!-- <center> -->
+            <button id="submit_btn">Submit</button>
+          <!-- </center> -->
+          </div>
+          <!-- </td>
+        </tr> -->
+      <!-- </table> -->
+      <!-- </form> -->
+      </div>
+      <div id="post_submit"></div>
+      </section>
+
+      <section class="contact_right">
+      <section class="contact_pre_main">
+       <p>We'd love to hear from you!</p>
+      </section>
+      <section class="feedbackNote">
+        <p> <b>Email: </b><a href="mailto:mf3668@nyu.edu">mf3668@nyu.edu</a></p>
+        <p> <b>Location: </b> 370 Jay St, 4th Floor, Brooklyn, NY 11201</p>
+        <iframe class="map_size" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.1401200376054!2d-73.98964998459564!3d40.69291157933389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a4bc1eb7b11%3A0x6fbe21d86d4ff2ff!2s370%20Jay%20St%204th%20Floor%2C%20Brooklyn%2C%20NY%2011201!5e0!3m2!1sen!2sus!4v1634620072987!5m2!1sen!2sus" width="670" height="540" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+      </section>
+    </div>
+    <footer>
+      <p> Terms of Use </P>
+      <p> Privacy Policy </P>
+      <p> Help </P>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+  (function() {
+    window.onload = () => {
+      // app.initialize();
+      app.formsubmission();
+    }
+  })();
+  </script>
+</body>
+
+</html>
