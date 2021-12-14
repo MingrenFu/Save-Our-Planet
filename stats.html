@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protect the Earth</title>
+  <link rel="stylesheet" href="css/desktop.css" type="text/css">
+  <link rel="stylesheet" href="css/tablet.css" type="text/css">
+  <link rel="stylesheet" href="css/mobile.css" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <nav>
+        <ul class="nav1">
+          <li class="navLogo"><a href = "index.html">Save Our Planet</a></li>
+          <li class="navItem"><a href = "index.html">Home</a></li>
+          <li class="navItem"><a href = "issues.html">Issues</a></li>
+          <li class="navItem active"><a href = "stats.html">Stats</a></li>
+          <li class="navItem"><a href = "solutions.html">Solutions</a></li>
+          <li class="navItem"><a href = "contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main_display">
+    <img src="images/air_quality.jpeg" class="main_image">
+    <h1>Live Data</h1>
+    <h3>Check out your local air quality</h3>
+    <section class="search_bar"><input type="text" id="search_input" placeholder="Type in a city or state/province"></section>
+    <section class="search_button"><button id="search" type="button">Search</button></section>
+    <img src="images/search_icon.png" class="searchIcon"/>
+    </section>
+    <div class="stats_body">
+    <!-- <h1 id="AQtitle"> Air Quality Index </h1> -->
+    <section class="AirData">
+    <div id="left">
+    <div id="location">Location</div>
+    <div id="city_condition"></div>
+    <div id="city_name"></div>
+    </div>
+    <div id="right">
+    <div id="unit">BreezoMeter AQI</div>
+    <div id="number"></div>
+    </div>
+    </section>
+    <section class="airQualityScale">
+    <img id="ScaleImage" src="images/aqi_scale.png"></img>
+    </section>
+    <section class="FireData">
+    <div id="top">Number of Recent Active Wildfires Worldwide</div>
+    <div id="bottom"></div>
+    <div id="map"></div>
+    </section>
+    </div>
+    <footer>
+      <p> Terms of Use </P>
+      <p> Privacy Policy </P>
+      <p> Help </P>
+    </footer>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+  (function() {
+    window.onload = () => {
+      app.initialize();
+      app.map();
+      app.activeFire();
+    }
+  })();
+  </script>
+</body>
+
+</html>
