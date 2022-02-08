@@ -1,6 +1,6 @@
 var app = {
 
-	OWMURL: "https://api.openweathermap.org/data/2.5/weather?q=",
+  OWMURL: "https://api.openweathermap.org/data/2.5/weather?q=",
   BMURL: "https://api.breezometer.com/air-quality/v2/current-conditions?lat=",
   SDBURL: "https://sheetdb.io/api/v1/rvkpiecmiuupu",
 
@@ -62,7 +62,7 @@ var app = {
 
   getAirQuality: function(latitude, longitude, sLocation, lLocation, weather1, weather2) {
     var breezoMeterCustomURL = app.BMURL + `${latitude}&lon=${longitude}` + '&features=breezometer_aqi,local_aqi,health_recommendations' + '&key=';
-    var myBreezoMeterKey = '0a5aa0a487774b95b3253acc12002b9b';
+    var myBreezoMeterKey = '3e794104a3214a0ca7ea66395264f29d';
     var breezoMeterReqURL = breezoMeterCustomURL + myBreezoMeterKey;
     var city = sLocation;
     var country = lLocation;
