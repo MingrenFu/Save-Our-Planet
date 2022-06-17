@@ -62,7 +62,7 @@ var app = {
 
   getAirQuality: function(latitude, longitude, sLocation, lLocation, weather1, weather2) {
     var breezoMeterCustomURL = app.BMURL + `${latitude}&lon=${longitude}` + '&features=breezometer_aqi,local_aqi,health_recommendations' + '&key=';
-    var myBreezoMeterKey = '7d79f142bc824faa86e48e5d0e259f11';
+    var myBreezoMeterKey = 'b506f8c773854ecab7437b3fe67e4b07';
     var breezoMeterReqURL = breezoMeterCustomURL + myBreezoMeterKey;
     var city = sLocation;
     var country = lLocation;
